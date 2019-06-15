@@ -1,5 +1,6 @@
 package com.company.MVC;
 
+import com.company.MVC.controller.Controller;
 import com.company.MVC.model.Model;
 import com.company.MVC.view.View;
 
@@ -18,6 +19,7 @@ public class Application {
     public static void runApp(){
         Model model=new Model();
         View view=new View(model);
+        Controller controller=new Controller(model,view);
     }
 
 }
